@@ -1,0 +1,201 @@
+Flexbox module challenge main HTML page 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="Flexbox.css">
+  <title>
+    Lambda Journey Portfolio by: Mark Riley
+  </title>
+</head>
+
+<header class="nav">
+  <div class="header">
+    Mark Riley's Portfolio
+  </div>
+    <section class="buttons">
+    <div class="button"><button type="button" class="projects"><a href="file:///C:/Users/Mark%20Riley/Documents/LambdaModule3/Flexbox%20module%20challenge/portfolio.html">About Me</a></button>
+    </div>
+    <div class="button"><button type="button" class="about"><a href="file:///C:/Users/Mark%20Riley/Documents/LambdaModule3/Flexbox%20module%20challenge/projects.html">Projects</a></button></div>
+    <div class="button"><button type="button" class="contact"><a href="file:///C:/Users/Mark%20Riley/Documents/LambdaModule3/Flexbox%20module%20challenge/contacts.html">Contact Information</a></button></div>
+    </section>
+</header>
+
+
+<body>
+<div id="main">
+<img src="https://picsum.photos/id/0/367/267" id="laptop">
+</div>
+<div class="bio">
+  Mark Riley
+  <br>
+  <button type="button" class="project-button">My Projects</button>
+  <p>Here on display are some of the
+    <br>
+     projects I've worked on this year. While it was
+    <br>
+    certainly not as easy as it looked,
+    <br>
+    I learned to created interactive, beautifully crafted
+    <br>
+    web sites and applications that have full
+    <br>
+    functionality and a range of dynamic features.
+  </p>
+  </div>
+
+  <section class="samples">
+    <img src="https://picsum.photos/id/1011/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1015/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1020/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1025/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1024/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1040/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/104/367/267" alt="random image" class="image">
+    <img src="https://picsum.photos/id/1039/367/267" alt="random image" class="image">
+  </section>
+
+  <footer>
+    <section class="bottom">
+    Like what you see?
+    <br>
+    </section>
+    <section class="contacts">
+    <button type="button" name="Get In Touch" class="social"><a href="mailto:mgriley1994@gmail.com">Get In Touch</a></button>
+    <button type="button" name="LinkedIn" class="social"><a href="https://www.linkedin.com/in/mark-riley-56073b137/">LinkedIn</a></button>
+    <button type="button" name="Instagram" class="social">Instagram</button>
+    </section>
+  </footer>
+  </body>
+</html>
+
+
+
+
+
+
+Flexbox module challenge main CSS page
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.nav {
+  background-color: #5A2726;;
+  height: 200px;
+}
+.header {
+  font-size: 3em;
+  padding: 30px;
+  color: white;
+  font-style: italic;
+}
+.buttons {
+  height: 10em;
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.projects, .about, .contact {
+  padding: 10px;
+  font-size: 25px;
+  font-style: italic;
+  color: white;
+  font-family: 'Cedarville Cursive';
+  background-color: #5A2726;
+  margin-right: 15px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  background-color: #5A2726;
+}
+.bio {
+  text-align: left;
+  float: right;
+  font-size: 25px;
+  color: white;
+  margin-right: 100px;
+  margin-left: auto;
+  margin-top: -325px;
+}
+#laptop {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 40%;
+}
+.project-button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 25px;
+  font-style: italic;
+  color: white;
+  font-family: 'Cedarville Cursive';
+  background-color: #5A2726;
+}
+.image {
+  width: 250px;
+  height: 250px;
+  margin: 30px;
+}
+.samples {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+.bottom {
+  font-size: 3em;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.contacts {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social {
+  background-color: #5A2726;
+  padding: 20px;
+  font-size: 25px;
+  font-style: italic;
+  color: white;
+  font-family: 'Cedarville Cursive';
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
